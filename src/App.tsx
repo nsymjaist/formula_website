@@ -1,0 +1,30 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Layout } from './components/Layout';
+import { Home } from './pages/Home';
+import { News } from './pages/News';
+import { About } from './pages/About';
+import { Results } from './pages/Results';
+import { Sponsors } from './pages/Sponsors';
+import { Contact } from './pages/Contact';
+
+export default function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="news" element={<News />} />
+          <Route path="about" element={<About />} />
+          <Route path="results" element={<Results />} />
+          <Route path="sponsors" element={<Sponsors />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
+}

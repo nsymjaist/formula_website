@@ -1,0 +1,8 @@
+{
+  "name": "Student Formula Team Website",
+  "description": "A professional and welcoming website for a Student Formula team, featuring news, about us, results, sponsors, and contact sections.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
